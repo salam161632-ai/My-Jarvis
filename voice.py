@@ -13,7 +13,6 @@ class Speaker:
 
     def say(self, text: str) -> None:
         print(f"Jarvis: {text}")
-        # বাংলা টেক্সটকে ভয়েসে রূপান্তর করে প্লে করা
         tts = gTTS(text=text, lang='bn', slow=False)
         tts.save("response.mp3")
         
