@@ -21,7 +21,8 @@ class Speaker:
 class Listener:
     """Microphone input using SpeechRecognition (Google Web Speech API)."""
 
-    def __init__(self, language: str = "en-IN") -> None:
+    def __init__(self, language: str = "bn-BD"
+") -> None:
         import speech_recognition as sr
 
         self._sr = sr
